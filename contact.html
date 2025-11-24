@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGCTUB – Emergency Complaint Service</title>
+  <link rel="icon" sizes="32x32" href="images/linklogo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="BGCTUB Logo">
+    <nav>Proctor Office, BGC Trust University Bangladesh</nav>
+  </header>
+
+  <section class="main">
+    <div class="left">
+      <h1>Emergency Complaint Service</h1>
+
+      <form action="dbconnect.php" method="post">
+        <label for="name">Name :</label>
+        <input type="text" name="name" placeholder="Write your name here" required>
+
+        <label for="phone">Phone Number :</label>
+        <input type="text" name="phone" placeholder="Write your phone number here" required>
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" placeholder="Write your Email here" required>
+
+        <label for="message">Write Your Complaint Here:</label>
+        <textarea name="message" rows="8" placeholder="Write your Message or Review here..." required></textarea>
+
+        <button type="submit"><strong>Submit Complaint</strong></button>
+      </form>
+    </div>
+
+    <div class="right">
+      <img src="images/bg.jpg" alt="BGCTUB Image">
+    </div>
+  </section>
+
+  <footer>
+    BGC Biddyanagar, Chandanaish, Chattogram, Bangladesh
+  </footer>
+</body>
+</html>
