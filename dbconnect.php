@@ -24,7 +24,7 @@ $email = $_REQUEST['email'];
 $message = $_REQUEST['message'];
 
 // Insert query
-$sql = "INSERT INTO MSG VALUES ('$name', '$phone', '$email', '$message')";
+$sql = "INSERT INTO MSG (name, phone, email, message) VALUES ('$name', '$phone', '$email', '$message')";
 
 echo "<div class='card'>";
 
@@ -33,7 +33,7 @@ if (mysqli_query($conn, $sql)) {
     echo "<h1 class='glow'>Complaint Received</h1>";
     echo "<h2>Necessary steps are going to be taken as soon as possible.</h2>";
 } else {
-    echo "<h1 class='glow'>ERROR: Unable to save your complaint.</h1>";
+     echo "ERROR: " . mysqli_error($conn);
 }
 
 echo "</div>";
